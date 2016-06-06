@@ -1,2 +1,2 @@
 # VirtualizedEvolution
-A project for creating a virtual universe for evolving software.
+A project for creating a distributed virtual universe for evolving software.
