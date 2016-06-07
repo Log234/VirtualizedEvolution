@@ -16,3 +16,7 @@ For every iteration the 5 best DNAs are selected and distributed to the clients 
 * Automated Testing Suite
 
 More information on the individual objectives in their respective folders.
+
+## Project Security
+There are several components of this project that will either require architecture rewrites, optimizations or thorough testing as they are vulnerable to security flaws or are open attack surfaces.
+These issues will be discussed in [this document](https://github.com/Log234/VirtualizedEvolution/blob/master/Design/Security/README.md).
