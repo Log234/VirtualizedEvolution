@@ -41,7 +41,7 @@ Testing strategies:
   5. Code review
   6. Automated Testing Suite (ATS)
   7. Penetration testing
-  8. dry-runs with resource monitoring
+  8. Dry-runs with resource monitoring
   
   
 ## Server
