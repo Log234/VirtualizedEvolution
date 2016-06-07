@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Update_Manager
 {
-    public partial class Form1 : Form
+    public partial class UMForm : Form
     {
-        public Form1()
+        public UMForm()
         {
             InitializeComponent();
         }

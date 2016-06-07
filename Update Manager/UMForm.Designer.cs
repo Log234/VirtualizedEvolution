@@ -1,6 +1,6 @@
 ﻿namespace Update_Manager
 {
-    partial class Form1
+    partial class UMForm
     {
         /// <summary>
         /// Required designer variable.

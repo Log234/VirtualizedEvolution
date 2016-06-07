@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace Update_Manager
 {
-    static class Program
+    static class UpdateManager
     {
         /// <summary>
         /// The main entry point for the application.
@@ -16,7 +16,7 @@ namespace Update_Manager
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new UMForm());
         }
     }
 }
