@@ -53,8 +53,8 @@ Testing strategies:
 | Broken authentication | High 3     | Moderate 2 | Very High 5 | Authentication will be handled by oAuth |
 | Components with Vulnerabilities | Moderate 2 | Moderate 2 | High 4 | Verify that all components are up-to-date |
 | MFLAC*                | Moderate 2 | Moderate 2 | High 4      | Always verify authorization             |
-| Session hijacking     | Moderate 2 | Unlikely 0 | Low 2       | Session time-out                        |
 | Private key is stolen | High 3     | Unlikely 0 | Moderate 3  | Verify file hash with server before installation |
+| Session hijacking     | Moderate 2 | Unlikely 0 | Low 2       | Session time-out                        |
 
 MFLAC: Missing Function Level Access Control
 
