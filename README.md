@@ -1,4 +1,4 @@
-# VirtualizedEvolution
+# Virtualized Evolution
 Virtualized Evolution is a software suite for creating a universe where software can develop it self based on evolution.
 
 The evolution is based on challenges and rewards. The more challenges a program manages to complete, the higher score it gets, the higher is the chance that its DNA will be inherited down to the next generation.
