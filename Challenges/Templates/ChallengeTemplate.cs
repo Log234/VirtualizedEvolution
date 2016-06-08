@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace VirtualizedEvolution
+namespace Challenges.Templates
 {
     class ChallengeTemplate : Challenge // Same as filename, except without the version suffix
     {
@@ -14,14 +14,14 @@ namespace VirtualizedEvolution
 
 
         // Challenge logic
-        public override string getChallenge()
+        public override string GetChallenge()
         {
             return "Hello!";
         }
 
 
         // Solution logic
-        public override bool checkSolution(string answer)
+        public override bool CheckSolution(string answer)
         {
             if (answer.Equals("Hello, world!"))
             {

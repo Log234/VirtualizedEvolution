@@ -1,21 +1,20 @@
-using System;
+using Challenges.Challenges;
 
-namespace VirtualizedEvolution
+namespace Challenges.Goals
 {
-    class BasicMathmathics : Goal // Same as filename, except without the version suffix
+    internal class BasicMathmathics : Goal // Same as filename, except without the version suffix
     {
+        private readonly Challenge[] _challenges = new Challenge[100];
+
         // Metadata
-        String achievementName = "Greet the world!";
-        String achievementDesc = "A goal where the DNA will have to greet the world on 100 different languages.";
-        int achievementReward = 100;
+        private string achievementName = "Greet the world!";
+        private string achievementDesc = "A goal where the DNA will have to greet the world on 100 different languages.";
+        private int achievementReward = 100;
 
-        Challenge[] challenges = new Challenge[100];
-        Goal[] goals = new Goal[0];
-
-        public override void initialize()
+        public override void Initialize()
         {
             // Add challenges
-            challenges[0] = new Addition();
+            _challenges[0] = new Addition();
             // 99 more challenges
 
             // Add goals

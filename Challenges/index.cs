@@ -1,4 +1,7 @@
-﻿namespace VirtualizedEvolution
+﻿using Challenges.Challenges;
+using Challenges.Goals;
+
+namespace Challenges
 {
     // This file keeps track of all the challenges available to the DNA.
     // It is implemented in its own file so we don't have to update the client and sever every time
