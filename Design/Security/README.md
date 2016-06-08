@@ -20,13 +20,13 @@ So in this document I will discuss the main issues and possible solutions, as we
 
 | Vulnerability           | Impact     | Likelihood | Risk        | Action                                          |
 |-------------------------|------------|------------|-------------|-------------------------------------------------|
-| Infinite loops          | Low 1      | High 3     | High 4      | Set time limit for task completion              |
-| Extreme disk usage      | Low 1      | High 3     | High 4      | Cap read & writes/second and storage on disk    |
-| Extreme memory usage    | Moderate 2 | High 3     | Very High 5 | Cap memory usage                                |
-| Extreme CPU usage       | Moderate 2 | High 3     | Very High 5 | Cap CPU utilization and # of processes to spawn |
-| Access other data       | High 3     | High 3     | Extreme 6   | Limit read/write to specific folders            |
-| Spamming random servers | High 3     | High 3     | Extreme 6   | Limit network communication to specific IP      |
 | Executing external CMDs | High 3     | High 3     | Extreme 6   | No access to commands other than RNA            |
+| Spamming random servers | High 3     | High 3     | Extreme 6   | Limit network communication to specific IP      |
+| Access other data       | High 3     | High 3     | Extreme 6   | Limit read/write to specific folders            |
+| Extreme CPU usage       | Moderate 2 | High 3     | Very High 5 | Cap CPU utilization and # of processes to spawn |
+| Extreme memory usage    | Moderate 2 | High 3     | Very High 5 | Cap memory usage & variable creation            |
+| Extreme disk usage      | Low 1      | High 3     | High 4      | Cap read & writes/second and storage on disk    |
+| Infinite loops          | Low 1      | High 3     | High 4      | Set time limit for task completion              |
 (Initial version)
 
 RNA must fail safe, if it discoveres any issues it must immediately terminate the process and if necessary upload DNA for analysis.
@@ -52,7 +52,7 @@ Testing strategies:
 | Injection             | High 3     | Moderate 2 | Very High 5 | Sanitize all input                      |
 | Broken authentication | High 3     | Moderate 2 | Very High 5 | Authentication will be handled by oAuth |
 | Components with Vulnerabilities | Moderate 2 | Moderate 2 | High 4 | Verify that all components are up-to-date |
-| MFLAC*                | Moderate 2 | Moderate 2 | High 4      | Always verify authorization             |
+| MFLAC*                | Moderate 2 | Moderate 2 | High 4      | Verify authorization for all operations |
 | Private key is stolen | High 3     | Unlikely 0 | Moderate 3  | Verify file hash with server before installation |
 | Session hijacking     | Moderate 2 | Unlikely 0 | Low 2       | Session time-out                        |
 
