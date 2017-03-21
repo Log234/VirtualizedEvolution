@@ -1,5 +1,16 @@
 package virtualevo.client;
 
-public class P2S {
+import virtualevo.client.session.SessionManager;
 
+public class P2S {
+	// TODO Check for updates
+
+	public void initialize() {
+		establishConnection();
+	}
+
+	private void establishConnection() {
+		// TODO Connect to server
+		SessionManager.startSession();
+	}
 }
