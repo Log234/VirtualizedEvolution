@@ -47,9 +47,36 @@ public class UserIO {
 						finished = true;
 				}
 			}
+			if (!finished) {
+				System.out.print("Please enter one of the permitted alternatives: ");
+				for (int i = 0; i < alternatives.length; i++) {
+					if (i != alternatives.length - 1)
+						System.out.print(alternatives[i] + "/");
+					else
+						System.out.println(alternatives[i] + ".");
+				}
+			}
 			
 		}
 
 		return reply;
+	}
+	
+	/**
+	 * Queries the user with msg and interprets the result as a boolean.
+	 * 
+	 * @param msg
+	 * @return True if the answer was yes, false otherwise.
+	 */
+	public static boolean getBoolean(String msg) {
+		String result = getString(msg, new String[]{"yes", "no"});
+		switch (result) {
+		case "yes":
+			return true;
+
+		case "no":
+		default:
+			return false;
+		}
 	}
 }
