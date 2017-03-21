@@ -3,14 +3,19 @@ package virtualevo.client;
 import virtualevo.client.session.SessionManager;
 
 public class P2S {
-	// TODO Check for updates
-
+	SessionManager session;
+	
 	public void initialize() {
 		establishConnection();
+		checkUpdates();
+		session = new SessionManager();
 	}
 
 	private void establishConnection() {
 		// TODO Connect to server
-		SessionManager.startSession();
+	}
+	
+	private void checkUpdates() {
+		// TODO Check for updates
 	}
 }

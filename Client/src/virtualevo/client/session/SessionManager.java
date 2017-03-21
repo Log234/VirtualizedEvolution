@@ -9,7 +9,7 @@ import virtualevo.client.userIO.UserIO;
 public class SessionManager {
 	private static String sessionKey;
 	
-	public static void startSession() {
+	public SessionManager() {
 		loadKey();
 		if (verifyKey() != 0)
 			if (generateKey() != 0)
