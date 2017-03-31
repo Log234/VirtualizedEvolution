@@ -10,7 +10,7 @@ So in this document I will discuss the main issues and possible solutions, as we
 * Update Manager
   * P2P distribution of updates and DNA
 * Challenges
-  * Logical bombs/Rogue scripts
+  * Tampered DNA
 
 
 ## Client
