@@ -66,11 +66,11 @@ The key-authenticity key will have a longer life span as it is difficult to repl
 ### P2P distribution
 Currently I'm planning to utilize the P2P network to distribute updates to the clients.
 This opens for some challanges, but here is the protocol as currently imagined:
-1) Encrypt the update files and their associated hash-value using the private-update-authenticity key
-2) Upload the update files and hash-values to the P2P network replacing the existing files with the new version. The files will be shared with all users as read-only.
+1) Encrypt the hash-values of the update files using the private-update-authenticity key
+2) Upload the update files and encrypted hash-values to the P2P network replacing the existing files with the new version. The files will be shared with all users as read-only.
 3) This replacement will trigger a file-updated event in the client which will then download the latest version of the file along with the hash-value.
-4) The client will decrypt the update files using the public-update-authenticity key
-5) Then if the hash-value matches the decrypted files they will be considered safe and replace the existing files
+4) The client will decrypt the hash-values using the public-update-authenticity key
+5) Then if the hash-value matches the files they will be considered safe and replace the existing files
 
 These extra steps are to counter the off-chance that someone would be able to somehow steal the login-credentials to the server or exploit some unknown weakness in the Hive2Hive and upload false update files. Now they would also need the private keys which would be safely stored somewhere else.
 
