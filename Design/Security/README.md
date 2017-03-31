@@ -47,7 +47,7 @@ Testing strategies: (Initial thoughts, needs refining)
 |-----------------------|------------|------------|-------------|-----------------------------------------|
 | Injection             | High 3     | Moderate 2 | Very High 5 | Sanitize all input                      |
 | Components with Vulnerabilities | Moderate 2 | Moderate 2 | High 4 | Verify that all components are up-to-date |
-| Private key is stolen | High 3     | Unlikely 0 | Moderate 3  | Verify file hash with server before installation |
+| Private key is stolen | High 3     | Unlikely 0 | Moderate 3  | See: Key management |
 
 Communication, login and transfer of files/data will be handled by the [Hive2Hive library](https://github.com/Hive2Hive/Hive2Hive).
 But we will still need to keep an eye on the higher-level communication protocols.
