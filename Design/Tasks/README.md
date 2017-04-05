@@ -30,8 +30,8 @@ Answer: "Hello" or "Hey" or "Hi" or "Howdy" or "Hello, world!" or ...
 Task: "This is my ball." "This ball is x."  
 Answer: "mine"
 
-(Very advanced, requires an understanding of semantics)
-Task: "Paul is feeling happy." "Is Paul happy?"
+(Very advanced, requires an understanding of semantics)  
+Task: "Paul is feeling happy." "Is Paul happy?"  
 Answer: "Yes" or True
 
 Another option is allowing the user and DNA to communicate through the console, that way the user can reward the DNA for behaving in a positive/expected manner. This allows for a more advanced and precise development, as the DNA can only become as smart as the tasks we give it.
