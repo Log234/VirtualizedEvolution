@@ -1,3 +1,4 @@
+
 # Tasks
 
 The tasks are the nutrition of the DNA, they will award the DNA a certain amount of points and extend its lifespan by a certain amount, depending on the complexity of the task.
@@ -15,6 +16,8 @@ Maybe we also could write some task that will generate valid problems to solve w
 
 ### Text
 Text tasks will consist of some query to be answered.
+We should consider whether to reveal the "correct answer" or not, as this is a question I feel is up for debate.
+Both static and dynamic tasks could be implemented here as well.
 
 These tasks may be difficult to formulate, as the correct answer may be difficult to validate.
 Here are some suggestions:
