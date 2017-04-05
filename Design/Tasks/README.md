@@ -22,12 +22,12 @@ Both static and dynamic tasks could be implemented here as well.
 These tasks may be difficult to formulate, as the correct answer may be difficult to validate.
 Here are some suggestions:
 
-(Fairly simple tasks, requires no knowledge of grammar or semantics, only an expected word given a context)
-Task: "Hello"
+(Fairly simple tasks, requires no knowledge of grammar or semantics, only an expected word given a context)  
+Task: "Hello"  
 Answer: "Hello" or "Hey" or "Hi" or "Howdy" or "Hello, world!" or ...
 
-(Bit more advanced, requires no understanding of semantics, but does require an understanding of grammar)
-Task: "This is my ball." "This ball is x."
+(Bit more advanced, requires no understanding of semantics, but does require an understanding of grammar)  
+Task: "This is my ball." "This ball is x."  
 Answer: "mine"
 
 (Very advanced, requires an understanding of semantics)
